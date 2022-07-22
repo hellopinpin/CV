@@ -59,13 +59,13 @@ table {
 
 body {
   font-family: 'Roboto' ,serif;
+  font-weight: 500;
   text-align: center;
 }
 
 h2 {
   font-size: 64px;
   line-height: 84px;
-  font-style: italic;
 }
 
 img {
@@ -81,7 +81,6 @@ img {
   background: url(./pic/banner.png) no-repeat top center/auto 958px;
   height: 958px;
   color: #FFF;
-  font-style: italic;
   text-align: left;
 }
 
@@ -95,26 +94,33 @@ img {
 .banner .p_here {
   font-size: 24px;
   line-height: 32px;
-  font-weight: bold;
 }
 
 .banner h1 {
   font-size: 80px;
   line-height: 106px;
+  margin-top: -68px;
   margin-bottom: 32px;
   font-weight: 900;
+}
+
+.banner h1 span {
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 500;
+  vertical-align: bottom;
+  display: inline-block;
 }
 
 .banner .p_intro {
   font-size: 24px;
   line-height: 36px;
-  font-weight: bold;
   margin-bottom: 40px;
   padding-left: 13px;
   padding-right: 8px;
 }
 
-.banner ul {
+.banner .link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,7 +132,7 @@ img {
   padding-right: 6px;
 }
 
-.banner ul a {
+.banner .link a {
   display: block;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
@@ -134,7 +140,7 @@ img {
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.banner ul a:hover {
+.banner .link a:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }
@@ -151,10 +157,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-style: italic;
 }
 
-.about h2 {
+.about .h2_about {
   margin-bottom: 40px;
 }
 
@@ -165,7 +170,6 @@ img {
 
 .about p {
   font-size: 24px;
-  font-weight: bold;
   line-height: 32px;
 }
 
@@ -182,7 +186,7 @@ img {
   line-height: 36px;
 }
 
-.about ul {
+.about .workExp {
   border-top: 1px solid #000;
   padding-right: 20.75px;
   padding-left: 20.75px;
@@ -191,7 +195,7 @@ img {
 .about .dot {
   font-size: 24px;
   line-height: 32px;
-  font-weight: bold;
+  font-weight: 500;
   margin-top: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,11 +221,11 @@ img {
   color: #fff;
 }
 
-.brand h2 {
+.brand .h2_brand {
   margin-bottom: 12px;
 }
 
-.brand .p_just {
+.brand .h3_brand {
   font-size: 24px;
   line-height: 32px;
   margin-bottom: 32px;
@@ -231,9 +235,10 @@ img {
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 68px;
+  font-weight: 400;
 }
 
-.brand ul {
+.brand .ul_brand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,7 +255,7 @@ img {
   padding-bottom: 144px;
 }
 
-.other_works h2 {
+.other_works .h2_otherWorks {
   margin-bottom: 16px;
 }
 
@@ -260,7 +265,7 @@ img {
   margin-bottom: 56px;
 }
 
-.other_works ul {
+.other_works .ul_otherWorks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,15 +274,10 @@ img {
   gap: 48px 24px;
 }
 
-.other_works li p {
+.other_works .ul_otherWorks p {
   font-size: 20px;
   line-height: 28px;
   margin-top: 16px;
-  font-weight: 500;
-}
-
-.other_works li p span {
-  font-style: italic;
 }
 
 .contact {
@@ -290,7 +290,7 @@ img {
   padding-bottom: 64px;
 }
 
-.contact h2 {
+.contact .h2_contact {
   font-size: 64px;
   line-height: 84px;
 }
@@ -299,7 +299,6 @@ img {
   font-size: 24px;
   line-height: 33px;
   margin-top: 16px;
-  font-style: italic;
 }
 
 .contact a {

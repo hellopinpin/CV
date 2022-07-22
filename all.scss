@@ -55,13 +55,13 @@ table {
 
 body{
     font-family: 'Roboto' ,serif;
+    font-weight: 500;
     text-align: center;
 }
 
 h2{
     font-size: 64px;
-    line-height: 84px;
-    font-style: italic;
+    line-height: 84px;    
 }
 
 img{
@@ -76,8 +76,7 @@ img{
 .banner{
     background: url(./pic/banner.png) no-repeat top center/ auto 958px;
     height: 958px;
-    color: #FFF;
-    font-style: italic;
+    color: #FFF;    
     text-align: left;
     .container{
         padding-top: 308px; 
@@ -88,23 +87,29 @@ img{
     .p_here{
         font-size: 24px;
         line-height: 32px;
-        font-weight: bold;
     }
     h1{
         font-size: 80px;
         line-height: 106px;
+        margin-top: -68px;
         margin-bottom: 32px;
-        font-weight: 900;           
+        font-weight: 900;        
+        span{
+            font-size: 24px;
+            line-height: 42px;
+            font-weight: 500;
+            vertical-align: bottom;
+            display: inline-block;
+        }   
     }
     .p_intro{
         font-size: 24px;
         line-height: 36px;
-        font-weight: bold;
         margin-bottom: 40px;
         padding-left: 13px;
         padding-right: 8px;
     }
-    ul{
+    .link{
         display: flex;
         gap: 16px;
         justify-content: center;
@@ -126,9 +131,9 @@ img{
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-style: italic;
+        
     }    
-    h2{
+    .h2_about{
         margin-bottom: 40px;
     }
     img{
@@ -137,7 +142,6 @@ img{
     }
     p{
         font-size: 24px;
-        font-weight: bold;
         line-height: 32px;
     }
     .p_name{
@@ -151,7 +155,7 @@ img{
         line-height: 36px;
     }    
     
-    ul{
+    .workExp{
         border-top: 1px solid #000;
         padding-right: 20.75px;
         padding-left: 20.75px;
@@ -160,7 +164,7 @@ img{
     .dot{
         font-size: 24px;
         line-height: 32px;
-        font-weight: bold;
+        font-weight: 500;
         margin-top: 28px;
         display: flex;
         justify-content: center;
@@ -180,10 +184,10 @@ img{
     padding-bottom: 160px;
     background: #000;
     color: #fff;
-    h2{
+    .h2_brand{
         margin-bottom: 12px;
-    }
-    .p_just{
+    }    
+    .h3_brand{
         font-size: 24px;
         line-height: 32px;    
         margin-bottom: 32px;
@@ -193,9 +197,10 @@ img{
         font-size: 20px;
         line-height: 30px;
         margin-bottom: 68px;
+        font-weight: 400;
     }
     
-    ul{
+    .ul_brand{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -209,7 +214,7 @@ img{
         padding-bottom: 144px;
     }
     
-    h2{
+    .h2_otherWorks{
         margin-bottom: 16px;
     }
     
@@ -219,22 +224,15 @@ img{
         margin-bottom: 56px;
     }
     
-    ul{
+    .ul_otherWorks{
         display: flex;
         flex-wrap: wrap;
-        gap: 48px 24px;
-    }
-    
-    li{
+        gap: 48px 24px; 
         p{
             font-size: 20px;
             line-height: 28px;
             margin-top: 16px;
-            font-weight: 500;
-            span{
-                font-style: italic;
-            }
-        }
+        }     
     }
 }
 
@@ -245,15 +243,14 @@ img{
         padding-top: 64px;  
         padding-bottom: 64px; 
     }
-    h2{
+    .h2_contact{
         font-size: 64px;
         line-height: 84px;
     }
     p{
         font-size: 24px;
         line-height: 33px;
-        margin-top: 16px;
-        font-style: italic;        
+        margin-top: 16px;                
     }
     a{
         color: #FFF;
