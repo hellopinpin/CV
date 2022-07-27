@@ -54,7 +54,7 @@ table {
 }
 
 body{
-    font-family: 'Roboto' ,serif;
+    font-family: 'Roboto' ,sans-serif;
     font-weight: 500;
     text-align: center;
 }
@@ -78,12 +78,10 @@ img{
     height: 958px;
     color: #FFF;    
     text-align: left;
-    .container{
-        padding-top: 308px; 
-        padding-bottom: 308px;
-        padding-left: 444px;
-        padding-right: 452px;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .p_here{
         font-size: 24px;
         line-height: 32px;
@@ -126,39 +124,35 @@ img{
 }
 
 .about{
-    .container{        
-        padding: 56px 394px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }    
+    padding-top: 56px;
+    padding-bottom: 56px;
     .h2_about{
-        margin-bottom: 40px;
+        padding-bottom: 20px;
     }
     img{
         width: 384px;
-        margin-bottom: 20px;
+        margin: 20px auto;
     }
-    p{
+    .profile{
         font-size: 24px;
         line-height: 32px;
-    }
-    .p_name{
-        margin-bottom: 4px;   
-    }
-    .p_birth{
-        margin-bottom: 8px;
-    }
-    .p_education{
-        margin-bottom: 24px;
-        line-height: 36px;
-    }    
-    
+        
+        .li_name{
+            margin-bottom: 4px;   
+        }
+        .li_birth{
+            margin-bottom: 8px;
+        }
+        .li_education{
+            margin-bottom: 24px;
+            line-height: 36px;
+        }   
+    }     
     .workExp{
+        display: inline-block;
         border-top: 1px solid #000;
-        padding-right: 20.75px;
-        padding-left: 20.75px;
+        padding-right: 22.2px;
+        padding-left: 22.2px;
     }
     
     .dot{
@@ -212,23 +206,20 @@ img{
     .container{
         padding-top: 56px;
         padding-bottom: 144px;
-    }
-    
+    }    
     .h2_otherWorks{
         margin-bottom: 16px;
-    }
-    
+    }    
     .intro{
         font-size: 20px;
         line-height: 30px;
         margin-bottom: 56px;
-    }
-    
+    }    
     .ul_otherWorks{
         display: flex;
         flex-wrap: wrap;
         gap: 48px 24px; 
-        p{
+        h3{
             font-size: 20px;
             line-height: 28px;
             margin-top: 16px;
@@ -238,21 +229,20 @@ img{
 
 .contact{
     background: #000;    
-    .container{
-        color: #FFF;
-        padding-top: 64px;  
-        padding-bottom: 64px; 
-    }
+    color: #FFF;
+    padding-top: 64px;  
+    padding-bottom: 64px; 
     .h2_contact{
         font-size: 64px;
         line-height: 84px;
     }
-    p{
-        font-size: 24px;
-        line-height: 33px;
-        margin-top: 16px;                
+    li{
+        margin-top: 16px;  
     }
     a{
+        font-size: 24px;
+        line-height: 33px;
+        
         color: #FFF;
         text-decoration: none;
     }
